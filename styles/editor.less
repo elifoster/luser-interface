@@ -20,6 +20,18 @@ atom-text-editor, atom-text-editor::shadow, atom-text-editor[mini], atom-text-ed
         background-color: lighten(@input-background-color, 1%);
         color: lighten(@text-color, 50%);
       }
+
+      &.git-line-modified {
+        color: @text-color-git-modified;
+      }
+
+      &.git-line-removed {
+        color: @text-color-git-removed;
+      }
+
+      &.git-line-added {
+        color: @text-color-git-added;
+      }
     }
   }
 }
